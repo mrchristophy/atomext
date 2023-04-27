@@ -13,17 +13,5 @@ if(action === 'init'){
 }
 
 if(action === 'create'){
-
-    const createType = args._[1];
-    const componentName = args._[2];
-    if(!createType){
-        console.log('Please specify a type of component to create');
-        process.exit(1);
-    }
-    if(!componentName){
-        console.log('Please specify a name for the component');
-        process.exit(1);
-    }
-
-    await create(createType, componentName, {css: args.css, client: args.client});
+    await create();
 }

@@ -1,12 +1,10 @@
 
 # Atomext
 
-A simple scaffolding tool for NextJS 13 using atomic design principles.
+A simple scaffolding CLI tool for easily creating components in NextJS 13, using atomic design principles. Using this approach, global components are kept separate from page route components.
 
 
-
-
-## Documentation
+## Getting Started
 Start with a fresh install of NextjS 13. Don't attempt to run on an existing project, this hasn't been tested.
 ```
 npx create-next-app@latest --typescript
@@ -28,7 +26,7 @@ Add a script to your package.json
   },
 ```
 
-Init the program to select the directory for your components, and which layers you want to include. Templates and pages have been deselected by default since it's likely these will be managed under the app directory. This can also include custom directories using a comma-separated list when prompted.
+Initialize the CLI to select the directory for your components, and which layers you want to include. Templates and pages have been deselected by default since it's likely these will be managed under the app directory. This can also include custom directories using a comma-separated list when prompted.
 ```
 yarn ato init
 ```
@@ -36,19 +34,21 @@ yarn ato init
 Create a component:
 
 ```
-yarn ato create [type] [name] --css --client
-
-type: atom, molecule, organism, template, page (or custom)
-name: the name of your component (currently no checking for CamelCase so please enter this correctly!)
---css: if set this will create a css module file and link it to the component
---client: if set this will enable "use client" for client side components
-
+yarn ato create
 ```
 
-Full Example
+Follow the instructions in the CLI:
 
-```
-yarn ato create atom ButtonPrimary --css --client
-```
+- Select the component type (atom, molecule etc.)
+- Enter the component name in ReactFormat <-- like this
+- Select whether you want to include a scss module file
+- Select whether it is a client component
 
+## Roadmap
+
+- Support for app router components
+- Support for api routes
+- Support for Storybook integration
+- Support for testing libraries
+- ...what else would you like to see?
 
