@@ -12,9 +12,9 @@ Start with a fresh install of NextjS 13. Don't attempt to run on an existing pro
 npx create-next-app@latest --typescript
 ```
 
-Install Atomext with yarn/npm:
+Install Atomext as a dev dependency with yarn/npm:
 ```
-yarn add atomext
+yarn add atomext --dev
 ```
 
 Add a script to your package.json
