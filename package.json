@@ -1,6 +1,6 @@
 {
   "name": "atomext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "type": "module",
@@ -11,8 +11,12 @@
     "atomext": "./index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Thorp",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrchristophy/atomext"
+  },
   "dependencies": {
     "chalk-pipe": "^6.0.0",
     "inquirer": "^9.2.0",
